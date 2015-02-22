@@ -34,6 +34,7 @@ gulp.task('styles', function () {
 
   return gulp.src('scss/**/*.scss')
     .pipe(sass({
+      outputStyle: 'compressed',
       errLogToConsole: true
     }))
     .pipe(postcss(processors))
