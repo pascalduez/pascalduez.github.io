@@ -84,7 +84,7 @@ body {
 }
 
 .btn svg {
-  transition: transform 150ms ease-out 250ms;
+  transition: transform 150ms ease-out 350ms;
 
   .open & {
     transform: rotate(45deg);
