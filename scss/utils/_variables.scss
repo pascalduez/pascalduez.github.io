@@ -1,8 +1,8 @@
 /// Map of breakpoints for responsive design.
 /// @type Map
 $breakpoints: (
-  "small":  (max-width: 800px),
-  "medium": (min-width: 801px),
+  "small":  (max-width: 350px),
+  "medium": (min-width: 351px),
 ) !global;
 
 

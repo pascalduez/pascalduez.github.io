@@ -1,6 +1,7 @@
 
 $border: 6px;
 $menu: 350px;
+$btn: 40px;
 
 body {
   @include webfont('sans-serif');
@@ -73,13 +74,27 @@ body {
   }
 }
 
-.btn,
 .wrapper {
   transition: transform .3s;
   // will-change: transform;
 
   .open & {
-    transform: translateX(-$menu);
+    transform: translateX(-100vw);
+
+    @media (min-width: $menu) {
+      transform: translateX(-$menu);
+    }
+  }
+}
+
+.btn {
+  transition: transform .3s;
+  // will-change: transform;
+
+  @media (min-width: ($menu + $btn)) {
+    .open & {
+      transform: translateX(-$menu);
+    }
   }
 }
 
@@ -99,8 +114,8 @@ body {
   background: white;
 
   a {
-    width: 40px;
-    height: 40px;
+    width: $btn;
+    height: $btn;
     display: block;
   }
 }
